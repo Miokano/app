@@ -1,0 +1,126 @@
+t<pre>--ERROR NOTICE --
+FECHA: 14-10-20 15:51:45
+ARCHIVO: C:\xampp\htdocs\app\class\errores.php
+LINEA: 68
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: x
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-10-22 20:51:32
+ARCHIVO: C:\xampp\htdocs\app\class\errores.php
+LINEA: 97
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: x
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-10-23 20:51:44
+ARCHIVO: C:\xampp\htdocs\app\class\errores.php
+LINEA: 97
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: x
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-10-24 02:24:23
+ARCHIVO: C:\xampp\htdocs\app\views\users\edit.php
+LINEA: 11
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: nombre
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-10-24 02:24:23
+ARCHIVO: C:\xampp\htdocs\app\views\users\edit.php
+LINEA: 12
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: seg_nom
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-10-24 02:24:23
+ARCHIVO: C:\xampp\htdocs\app\views\users\edit.php
+LINEA: 14
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: Group_id
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-10-24 02:25:29
+ARCHIVO: C:\xampp\htdocs\app\views\users\edit.php
+LINEA: 11
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: nombre
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-10-24 02:25:29
+ARCHIVO: C:\xampp\htdocs\app\views\users\edit.php
+LINEA: 12
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: seg_nom
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-10-24 02:25:29
+ARCHIVO: C:\xampp\htdocs\app\views\users\edit.php
+LINEA: 14
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: Group_id
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-03 19:13:45
+ARCHIVO: C:\xampp\htdocs\app\views\users\delete.php
+LINEA: 3
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: user
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-03 19:13:59
+ARCHIVO: C:\xampp\htdocs\app\views\users\delete.php
+LINEA: 3
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: user
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-03 19:18:33
+ARCHIVO: C:\xampp\htdocs\app\controllers\groupscontroller.php
+LINEA: 70
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined property: Group::$group
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-03 19:26:02
+ARCHIVO: C:\xampp\htdocs\app\views\users\delete.php
+LINEA: 3
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: user
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-03 19:33:37
+ARCHIVO: C:\xampp\htdocs\app\views\users\edit.php
+LINEA: 7
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: Group_id
+--ERROR: NOTICE --
+</pre>
