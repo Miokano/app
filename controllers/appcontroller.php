@@ -6,6 +6,10 @@
 **/
 abstract class AppController{
 
+	/**
+	 * Método abstracto index.
+	 * Sirve para crear el método que se instanciará en las clases hijas.
+	**/
 	abstract public function index();
 
 	/**

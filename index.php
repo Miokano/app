@@ -39,9 +39,9 @@
 	if(empty($args)){
 		$args = array(0=>null);
 	}
-	if($action=="login" or $action=="index"){
+	if($action=="login"){
 	}else{
-		#Authorization::logged();
+		Authorization::logged();
 	}
 
 	# La ruta o directorio de carpetas de la vista.

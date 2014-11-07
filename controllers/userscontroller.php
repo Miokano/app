@@ -29,8 +29,24 @@
 		 * Función sendMail.
 		 * Serve para enviar un email.
 		 */
-		private function sendMail(){
+		public function sendMail($email,$name){
+			$mail = new PHPMailer;
+			$mail->From = 'soporte@ut.com';
+			$mail->FromName = 'Aplicaciones Web';
+			$mail->addAddress($email, $name); // Add a recipient
 
+			$mail->WordWrap = 50; // Set word wrap to 50 characters
+			$mail->isHTML(true);  // Set email format to HTML
+
+			$mail->Subject = 'Welcome to App';
+			$mail->Body    = 'You are now part of the great world of <b>APP!</b>';
+
+			if(!$mail->send()) {
+			    echo 'Message could not be sent.';
+			    echo 'Mailer Error: ' . $mail->ErrorInfo;
+			} else {
+			    echo 'Message has been sent';
+			}
 		}
 
 		/**
@@ -79,6 +95,7 @@
 					echo "edad correcta";
 				}*/
 				if($this->User->save("users", $_POST)){
+					$this->sendMail($_POST['email'],$_POST['first_name']);
 					$this->redirect(array("controller"=>"users", "action"=>"index"));
 				}else{
 					$this->redirect(array("controller"=>"users", "action"=>"add"));
@@ -93,10 +110,14 @@
 		* @param  $id Identifica el usuario a eliminar.
 		*/
      	public function delete($id = null){
-			if($_POST){
-				$users = $this->User->delete('users', 'id = '.$id);
-				$this->redirect(array("controller"=>"users", "action"=>"index"));
-		    }
+			if($this->User->delete("users", $id)){
+				$this->redirect(array("controller"=>"users","action"=>"index"));
+			}
+			$user = $this->User->find("users","all",
+			array(
+				"conditions"=>"users.id=$id"
+			));
+			$this->set("user", $user);
 		}
 
 		public function login(){
@@ -106,7 +127,7 @@
 				$auth = new Authorization();
 
 				$username = $filter->sanitizeText($_POST["username"]);
-				$password = $filter->sanitizeText($_POST["Password"]);
+				$password = $filter->sanitizeText($_POST["password"]);
 
 				$options['conditions'] = " username = '$username'";
 				$user = $this->User->find("users", "first", $options);

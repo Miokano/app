@@ -78,7 +78,7 @@ class Errores{
 		$strErr .= "</pre>";
 
 		if ($this->logearErrores) {
-			if ($this->archivoErrores) {
+			if (is_writable($this->archivoErrores)) {
 				$logTxt = file_get_contents($this->archivoErrores);
 				$logTxt .= $strErr.PHP_EOL;
 				file_put_contents($this->archivoErrores, $logTxt);

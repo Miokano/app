@@ -40,11 +40,17 @@ class ClassPDO{
 	 * @param $password La contraseña del usuario.
 	**/
 	private function connection(){
-		$this->connection = new PDO(
-			$this->dsn,
-			$this->username,
-			$this->password
-		);
+		try{
+			$this->connection = new PDO(
+				$this->dsn,
+				$this->username,
+				$this->password
+			);
+			$this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		}catch(PDOException $e){
+			echo "ERROR: " . $e->getMessage();
+			die();
+		}
 	}
 
 	/**
@@ -76,24 +82,24 @@ class ClassPDO{
 		}
 		switch ($query){
 			case 'all':{
-				$sql = "Select $fields From ".$table.$parameters;
+				$sql = "Select $fields From ".$table.' '.$parameters;
 				$this->result = $this->connection->query($sql);
 				break;
 			}
 			case 'count':{
-				$sql = "Select COUNT(*) From ".$table.$parameters;
+				$sql = "Select COUNT(*) From ".$table.' '.$parameters;
 				$result = $this->connection->query($sql);
 				$this->result = $result->fetchColumn();
 				break;
 			}
 			case 'first':{
-				$sql = "Select $fields From ".$table.$parameters;
+				$sql = "Select $fields From ".$table.' '.$parameters;
 				$result = $this->connection->query($sql);
 				$this->result = $result->fetch();
 				break;
 			}
 			default:
-				$sql = "Select $fields From ".$table.$parameters;
+				$sql = "Select $fields From ".$table.' '.$parameters;
 				$this->result = $this->connection->query($sql);
 				break;
 		}
@@ -143,25 +149,31 @@ class ClassPDO{
 	public function update($table = null, $data = array()){
 		$sql = "select * from $table";
 		$result = $this->connection->query($sql);
-		$id = $_POST['id'];
+
 		for($i=0;$i<$result->columnCount();$i++){
 			$meta = $result->getColumnMeta($i);
 			$fields[$meta['name']] = null;
 		}
-		$fieldsToChange="";
-		$valueToChange="";
-
-		foreach($data as $key => $value){
-			if(array_key_exists($key,$fields)){
-				$fieldsToChange .= ", ".$key;
-				$valueToChange .= ", "."\"$value\"";
+		if(array_key_exists("id", $data)){
+			//Update
+			$fieldsToSave = "";
+			$id = $data["id"];
+			unset($data["id"]);
+			$i = 0;
+			foreach ($data as $key => $value) {
+				if(array_key_exists($key, $fields)){
+					if($i==0){
+						$fieldsToSave .= $key."="."\"$value\"";
+					}elseif($i == count($data)-1){
+						$fieldsToSave .= ",".$key."="."\"$value\"";
+					}else{
+						$fieldsToSave .= ",".$key."="."\"$value\" ";
+					}
+				}
+				$i++;
 			}
+			$sql = "UPDATE $table SET $fieldsToSave WHERE $table.id = $id";
 		}
-
-		$sql = "UPDATE $table SET $fieldsToChange = $valueToChange WHERE id = $id";
-		echo $sql;
-		exit;
-
 		$this->result = $this->connection->query($sql);
 		return $this->result;
 	}
@@ -173,12 +185,12 @@ class ClassPDO{
 	 * @param $data Los datos que serán eliminado de la tabla users.
 	 * @return $result Devuelve la información (id, name) de la tabla users menos el que se elimino.
 	**/
-	public function delete($table = null, $data = array()){
-		$sql = "select * from $table";
-		$result = $this->connection->query($sql);
-		$id = $_POST['id'];
+	public function delete($table = null, $id){
+		#$sql = "select * from $table";
+		#$result = $this->connection->query($sql);
+		#$id = $_POST['id'];
 
-		$sql = "DELETE * FROM $table WHERE id = $id";
+		$sql = "DELETE FROM $table WHERE id = $id";
 		$this->result = $this->connection->query($sql);
 		return $this->result;
 	}

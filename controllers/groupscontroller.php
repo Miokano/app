@@ -66,10 +66,14 @@ class Group extends AppController{
 	* @param $id Identifica el grupo a eliminar.
 	*/
 	public function delete($id = null){
-		if($_GET){
-			$groups = $this->group->delete('groups', 'id = '.$id);
-			$this->redirect(array("controller"=>"groups", "action"=>"index"));
+		if($this->Group->delete("groups", $id)){
+			$this->redirect(array("controller"=>"groups","action"=>"index"));
 		}
+		$group = $this->Group->find("groups","all",
+		array(
+			"conditions"=>"groups.id=$id"
+		));
+		$this->set("group", $group);
 	}
 }
 ?>

@@ -63,5 +63,16 @@ class Validations{
 		}
 		return false;
 	}
+
+	/**
+	 * Método sanitizeText.
+	 * Sirve para ...
+	 * @param string $string Lo que se va a sanitizar.
+	**/
+	public function sanitizeText($string){
+		$string = filter_var($string, FILTER_SANITIZE_SPECIAL_CHARS);
+		return $string;
+	}
 }
+$filter = new Validations();
 ?>

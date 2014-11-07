@@ -9,6 +9,7 @@
 <th> Apellido </th>
 <th> Edad </th>
 <th> Email </th>
+<th> Usuario </th>
 <th> Password </th>
 <th> Opciones </th>
 </tr>
@@ -21,6 +22,7 @@ foreach($users as $user){
 	<td><?php echo $user['last_name'];?></td>
 	<td><?php echo $user['age']; ?></td>
 	<td><?php echo $user['email']; ?></td>
+	<td><?php echo $user['username']; ?></td>
 	<td><?php echo $user['password']; ?></td>
     <td><a href="users/edit/<?php echo $user['id']?>">Modificar</a> | <a href="users/delete/<?php echo $user['id']?>">Eliminar</a></td>
 <?php

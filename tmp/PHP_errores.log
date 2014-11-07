@@ -124,3 +124,210 @@ IP USUARIO: ::1
 MENSAJE: Undefined index: Group_id
 --ERROR: NOTICE --
 </pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 14:13:25
+ARCHIVO: C:\xampp\htdocs\app\views\users\delete.php
+LINEA: 3
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: user
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 14:34:21
+ARCHIVO: C:\xampp\htdocs\app\views\users\delete.php
+LINEA: 3
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: user
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 14:41:12
+ARCHIVO: C:\xampp\htdocs\app\controllers\userscontroller.php
+LINEA: 74
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: edad
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 14:42:23
+ARCHIVO: C:\xampp\htdocs\app\views\groups\edit.php
+LINEA: 3
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: group
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 14:42:23
+ARCHIVO: C:\xampp\htdocs\app\views\groups\edit.php
+LINEA: 4
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: group
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 14:42:33
+ARCHIVO: C:\xampp\htdocs\app\controllers\groupscontroller.php
+LINEA: 70
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined property: Group::$group
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 14:45:11
+ARCHIVO: C:\xampp\htdocs\app\class\pdo.php
+LINEA: 193
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: id
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 14:47:57
+ARCHIVO: C:\xampp\htdocs\app\class\pdo.php
+LINEA: 191
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: id
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 14:50:05
+ARCHIVO: C:\xampp\htdocs\app\views\groups\edit.php
+LINEA: 3
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: group
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 14:50:05
+ARCHIVO: C:\xampp\htdocs\app\views\groups\edit.php
+LINEA: 4
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: group
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 14:50:49
+ARCHIVO: C:\xampp\htdocs\app\controllers\userscontroller.php
+LINEA: 109
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: Password
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 14:57:48
+ARCHIVO: C:\xampp\htdocs\app\views\users\delete.php
+LINEA: 3
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: user
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 14:58:01
+ARCHIVO: C:\xampp\htdocs\app\views\users\delete.php
+LINEA: 3
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: user
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 15:12:39
+ARCHIVO: C:\xampp\htdocs\app\controllers\userscontroller.php
+LINEA: 90
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: edad
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR WARNING --
+FECHA: 14-11-07 15:12:39
+ARCHIVO: C:\xampp\htdocs\app\index.php
+LINEA: 13
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: include_once(class/PHPMailer.php): failed to open stream: No such file or directory
+--ERROR: WARNING --
+</pre>
+<pre>--ERROR WARNING --
+FECHA: 14-11-07 15:12:39
+ARCHIVO: C:\xampp\htdocs\app\index.php
+LINEA: 13
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: include_once(): Failed opening 'class/PHPMailer.php' for inclusion (include_path='.;C:\xampp\php\PEAR')
+--ERROR: WARNING --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 15:18:01
+ARCHIVO: C:\xampp\htdocs\app\controllers\userscontroller.php
+LINEA: 90
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: edad
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR WARNING --
+FECHA: 14-11-07 15:18:01
+ARCHIVO: C:\xampp\htdocs\app\index.php
+LINEA: 13
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: include_once(class/PHPMailer.php): failed to open stream: No such file or directory
+--ERROR: WARNING --
+</pre>
+<pre>--ERROR WARNING --
+FECHA: 14-11-07 15:18:01
+ARCHIVO: C:\xampp\htdocs\app\index.php
+LINEA: 13
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: include_once(): Failed opening 'class/PHPMailer.php' for inclusion (include_path='.;C:\xampp\php\PEAR')
+--ERROR: WARNING --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 15:18:55
+ARCHIVO: C:\xampp\htdocs\app\controllers\userscontroller.php
+LINEA: 90
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: edad
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 15:23:02
+ARCHIVO: C:\xampp\htdocs\app\controllers\userscontroller.php
+LINEA: 130
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined index: Password
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 15:25:02
+ARCHIVO: C:\xampp\htdocs\app\class\authorization.php
+LINEA: 14
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: user
+--ERROR: NOTICE --
+</pre>
+<pre>--ERROR NOTICE --
+FECHA: 14-11-07 15:29:05
+ARCHIVO: C:\xampp\htdocs\app\class\authorization.php
+LINEA: 14
+IP SERVIDOR: ::1
+IP USUARIO: ::1
+MENSAJE: Undefined variable: user
+--ERROR: NOTICE --
+</pre>

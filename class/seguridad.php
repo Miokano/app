@@ -28,7 +28,7 @@ class Seguridad{
 	 * @return $password y $salt Las regresa encriptadas.
 	**/
 	public function getPassword($password, $dig = 7){
-		$set_salt = './0123456789ABCDFEGHIJKLMNOPQRSTUVWXYYZ';
+		$set_salt = './0123456789ABCDFEGHIJKLMNOPQRSTUVWXYYZabcdefghijklmnopqrstuvwxyz';
 		$salt = sprintf('$2a$%02d$', $dig);
 		for ($i=0; $i < 22; $i++) {
 			$salt .= $set_salt[mt_rand(0, 22)];
